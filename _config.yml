@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Deep Learning
+email: anderson.avila@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This blog is meant to be a follow up of the activities developed during the deep learning course (ift6266h16) undertaken at Universite de Montreal (UdeM).
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username:  aravila
+
+# Build settings
+markdown: kramdown

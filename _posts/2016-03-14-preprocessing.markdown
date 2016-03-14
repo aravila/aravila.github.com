@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dogs vs cats - Pre-processing!!"
+title:  "Dogs vs cats - Pre-processing!"
 date:   2016-03-13 22:22:56 -0500
 categories: jekyll update
 ---
@@ -14,8 +14,13 @@ Following is an example of how to resize an image. More information and example 
 ------------------------------------------------------------------------------------------
 
 width = 200
+
 height = 200
+
 file_in = “images/train/cat.0.jpg”
+
 im1 = Image.open(file_in)
+
 im2 = im1.resize((width, height), Image.NEAREST)
+
 im2.save(“cat.0.jpg")

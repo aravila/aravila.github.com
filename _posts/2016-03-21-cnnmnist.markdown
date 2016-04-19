@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Dogs vs cats - lenet!"
+title:  "Dogs vs cats - lenet"
 date:   2016-03-20 22:22:56 -0500
 categories: jekyll update
 ---
-Project follow-up...
 
 
 Unfortunately, not much progress achieved. This week, I’ve been trying to manage to use the convolutional neural network code available at <a href="http://deeplearning.net/tutorial/lenet.html">deeplearning.net</a>. I thought this would be a good starting point since the code works well with mnist dataset. For some reason, training is only possible when the feature dimension used is 784, same used for mnist. This gives dogsvscats 50% accuracy (not even close to the baseline). Attempting to use any other dimensionality will provide a shape mismatch error (ValueError: Shape mismatch: x has 16200 cols (and 500 rows) but y has 800 rows (and 500 cols)), even after adjusting the filters and maxpool parameters accordingly. The same error occurs independently of the the dataset (Mnist or DogsvsCats seem to raise the same issue). I expected that the code would work with any dataset regardless of the dimension of the features, but seemngly it is not the case. In the next few days, I will take some time trying to overcome this problem, but will focus more on learning how to work with Blocks. 

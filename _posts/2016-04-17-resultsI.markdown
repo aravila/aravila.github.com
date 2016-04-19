@@ -1,0 +1,86 @@
+---
+layout: post
+title:  "Dogs vs cats - First results (75% accuracy)"
+date:   2016-04-14 1:22:56 -0500
+categories: jekyll update
+---
+<style>
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    height:5px;
+}
+
+</style>
+
+
+Finally, I managed to get some results using Keras. My convnet is very simple. To get started, I only made some adjusts on the example provided at <a href="http://keras.io/getting-started/sequential-model-guide/" target="_blank">keras.io</a>. In fact, I spent a considerable amount of time trying out different configurations in order to get my convnet to learn. The main change that got things going was the shift from Rectified Linear Units (ReLUs) to tanh units as activation function. I was expecting to equaly decrease training error rate, but faster <a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf" target="_blank">(Krizhevsky et al)</a> with Rectified Linear Units (ReLUS). However, my convnet was simply underfiting with ReLUs, even after trying different optimizers and learning rates. I still need to try batch normalization though. A second major thing (after using tanh) that helped me to put things on track was trying out different optimizers. At the end, I decided to stick with Adadelta, which is meant to dinamically adapt the learning rate over time. 
+<br>
+
+The architecture of my deep convolutional network is summarized below. We used 4 convolutional layers and one fully connected (FC) layer. Each convolutional layer filters the input image (130x130x3) with 32 kernels. The FC has 512 artificial neurons.<br>
+<table>
+    <tr>
+        <td align="right">INPUT&nbsp;&nbsp;</td>
+        <td align="left">[130x130x3]</td> 
+    </tr>
+    <tr>
+        <td align="right">CONV&nbsp;&nbsp;</td>
+        <td align="left">[3x3x3] (32 filters)</td> 
+    </tr>
+    <tr>
+        <td align="right">TANH&nbsp;&nbsp;</td>
+        <td align="left"></td> 
+    </tr>
+    <tr>
+        <td align="right">CONV&nbsp;&nbsp;</td>
+        <td align="left">[3x3x3] (32 filters)</td> 
+    </tr>
+    <tr>
+        <td align="right">TANH&nbsp;&nbsp;</td>
+        <td align="left"></td> 
+    </tr>
+    <tr>
+        <td align="right">POOL&nbsp;&nbsp;</td>
+        <td align="left">[2X2]</td> 
+    </tr>
+    <tr>
+        <td align="right">CONV&nbsp;&nbsp;</td>
+        <td align="left">[3x3x3] (32 filters)</td> 
+    </tr>
+    <tr>
+        <td align="right">TANH&nbsp;&nbsp;</td>
+        <td align="left"></td> 
+    </tr>
+    <tr>
+        <td align="right">CONV&nbsp;&nbsp;</td>
+        <td align="left">[3x3x3] (32 filters)</td> 
+    </tr>
+    <tr>
+        <td align="right">TANH&nbsp;&nbsp;</td>
+        <td align="left"></td> 
+    </tr>
+    <tr>
+        <td align="right">POOL&nbsp;&nbsp;</td>
+        <td align="left">[2X2]</td> 
+    </tr>
+    <tr>
+        <td align="right">FC&nbsp;&nbsp;</td>
+        <td align="left">[512]</td> 
+    </tr>
+</table>
+<br>
+
+
+In this first attempt, I used a batch with 100 examples and my convnet achieved roughly 25% of validation error after 100 epochs. 
+
+<img src="{{ site.baseurl }}/img/loss_adadelta.png" height="242" width="342">
+<img src="{{ site.baseurl }}/img/accuracy_adadelta.png" height="242" width="342">
+
+Epoch 100/100<br>
+20000/20000 [==============================] - 46s - <br>
+loss: 0.3849 - acc: 0.8349 - val_loss: 0.5773 - val_acc: 0.7456
+
+
+<!-- https://adbrebs.wordpress.com/page/3/ -->

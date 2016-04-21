@@ -16,7 +16,7 @@ th, td {
 </style>
 
 
-To my improve our previous results, I decided to try something more complex. This time I am using 6 convolutional layers with different numbers of filters, as described below. 
+To improve my previous results, I decided to try something more complex. This time I am using 6 convolutional layers with different numbers of filters, as described below. 
 
 <br>
 

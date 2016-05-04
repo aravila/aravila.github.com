@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 
-In order to speed up the learning process as well as to improve accuracy, I decided to try batch normalization. The method can be used with higher learning rates and in some cases dropout may not be necessary. During my tests, I noticed that change the learning rate from 0.01 to 0.1 took my accuracy from 0.7314 to , which confirms the assumption aforementioned.
+In order to speed up the learning process as well as to improve accuracy, I decided to try batch normalization. The method can be used with higher learning rates and in some cases dropout may not be necessary. During my tests, I noticed that change the learning rate from 0.01 to 0.1 took my accuracy from 0.7314 to 0.7714, which confirms the assumption aforementioned.
  
 
 <img src="{{ site.baseurl }}/img/loss_adadelta3.png" height="242" width="342">

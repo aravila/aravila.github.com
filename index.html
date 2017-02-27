@@ -1,23 +1,18 @@
 ---
-layout: default
+layout: default_new
 ---
+<article class="post">
 
-<div class="home">
+  <header class="post-header">
+    <h1 class="post-title">Welcome!</h1>
+  </header>
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="post-content">
+      
+        In this blog, you will find useful explanation on basic concepts related to deep learning, statistics and digital signal processing. These are the main tools in my research and I took the time to share this knowledge with you.<br><br>
+      
+        Have fun!
+      
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</article>

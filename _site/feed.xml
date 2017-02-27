@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anderson Avila</title>
+    <description>In this blog you will find useful explanation on several topics related to deep learning, statistics and digital signal processing.
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 27 Feb 2017 08:48:13 -0500</pubDate>
+    <lastBuildDate>Mon, 27 Feb 2017 08:48:13 -0500</lastBuildDate>
+    <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Dogs vs cats - Batch normalization (77%)</title>
+        <description>&lt;p&gt;In order to speed up the learning process as well as to improve accuracy, I decided to try batch normalization. The method can be used with higher learning rates and in some cases dropout may not be necessary. During my tests, I noticed that change the learning rate from 0.01 to 0.1 took my accuracy from 0.7314 to 0.7714, which confirms the assumption aforementioned.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/loss_adadelta3.png&quot; height=&quot;242&quot; width=&quot;342&quot; /&gt;
+&lt;img src=&quot;/img/accuracy_adadelta3.png&quot; height=&quot;242&quot; width=&quot;342&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Epoch 62/100&lt;br /&gt;
+80000/80000 [==============================] - 266s - &lt;br /&gt;
+loss: 0.2558 - acc: 0.7714 - val_loss: 0.6044 - val_acc: 0.8941&lt;/p&gt;
+
+&lt;!-- https://adbrebs.wordpress.com/page/3/ --&gt;
+</description>
+        <pubDate>Mon, 18 Apr 2016 04:22:56 -0400</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/04/18/batchnormalization.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/04/18/batchnormalization.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Dogs vs cats - Overfitting</title>
+        <description>&lt;p&gt;I’ve tested the impact of data augmentation on the already discussed models. Results were not very exciting since generalization was very poor in both cases. The model is clearly overfitting and did not go through all epochs. The plots bellow shows the result obtained.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/loss_adadelta_aug.png&quot; height=&quot;242&quot; width=&quot;342&quot; /&gt;
+&lt;img src=&quot;/img/accuracy_adadelta_aug.png&quot; height=&quot;242&quot; width=&quot;342&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Epoch 33/100&lt;br /&gt;
+80000/80000 [==============================] - 266s - &lt;br /&gt;
+loss: 0.4894 - acc: 0.7729 - val_loss: 1.4173 - val_acc: 0.4786&lt;/p&gt;
+
+&lt;!-- https://adbrebs.wordpress.com/page/3/ --&gt;
+</description>
+        <pubDate>Sun, 17 Apr 2016 04:22:56 -0400</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/04/17/resultsIII.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/04/17/resultsIII.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Dogs vs cats - Data Augmentation</title>
+        <description>&lt;p&gt;Data augmentation is a form of regularization an is considered an effective way to improve model generalization. This is because it allows us to present more data to our model and the technique is pretty much straighfoward for tasks involving images.&lt;/p&gt;
+
+&lt;p&gt;To enlarge my dataset, the data augumentation consisted of a 45 degree rotation, clock and anti-clockwise, and also horizontal reflection. The images bellow depicts the transformations applied on our dataset, along with some of the codes used for that.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;width = 130&lt;br /&gt;
+height = 130&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Resizing:&lt;br /&gt;
+file_in = “images/train/cat.0.jpg”&lt;br /&gt;
+im1 = Image.open(file_in)&lt;br /&gt;
+im2 = im1.resize((width, height), Image.NEAREST)&lt;br /&gt;
+im2.save(“resized_images/train/cat.0.jpg”)&lt;br /&gt;
+&lt;img src=&quot;/img/cat.0.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/cat.1.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/cat.10.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/dog.0.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/dog.1.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/dog.10.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;flipping:&lt;br /&gt;
+im1 = Image.open(file_in)&lt;br /&gt;
+img_rot = img.rotate(45)
+im2 = im1.resize((width, height), Image.NEAREST)&lt;br /&gt;
+im2.save(“flipped_images/train/cat.0.jpg”)&lt;br /&gt;
+&lt;img src=&quot;/img/cat.flip0.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/cat.flip1.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/cat.flip10.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/dog.flip0.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/dog.flip1.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/dog.flip10.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Rotating to the right:&lt;br /&gt;
+im1 = Image.open(file_in)&lt;br /&gt;
+img_rot = img.rotate(45)
+im2 = im1.resize((width, height), Image.NEAREST)&lt;br /&gt;
+im2.save(“resized_images/train/cat.0.jpg”)&lt;br /&gt;
+&lt;img src=&quot;/img/cat.right0.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/cat.right1.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/cat.right10.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/dog.right0.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/dog.right1.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/dog.right10.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Rotating to the left:&lt;br /&gt;
+im1 = Image.open(file_in)&lt;br /&gt;
+img_rot = img.rotate(-45)
+im2 = im1.resize((width, height), Image.NEAREST)&lt;br /&gt;
+im2.save(“resized_images/train/cat.0.jpg”)&lt;br /&gt;
+&lt;img src=&quot;/img/cat.left0.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/cat.left1.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/cat.left10.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/dog.left0.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/dog.left1.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/dog.left10.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 16 Apr 2016 04:02:56 -0400</pubDate>
+        <link>http://yourdomain.com/2016/04/16/dataargumentation.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/04/16/dataargumentation.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Dogs vs cats - Improved results (82% accuracy)</title>
+        <description>&lt;style&gt;
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    height:5px;
+}
+
+&lt;/style&gt;
+
+&lt;p&gt;To improve my previous results, I decided to try something more complex. This time I am using 6 convolutional layers with different numbers of filters, as described below.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Architecture overview:&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;INPUT&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[130x130x3]&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;CONV&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[3x3] (32 filters)&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;TANH&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;CONV&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[3x3] (32 filters)&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;TANH&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;POOL&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[2X2]&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;CONV&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[3x3] (64 filters)&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;TANH&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;CONV&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[3x3] (64 filters)&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;TANH&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;POOL&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[2X2]&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;CONV&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[3x3] (128 filters)&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;TANH&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;CONV&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[3x3] (128 filters)&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;TANH&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;POOL&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[2X2]&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;FC&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[512]&lt;/td&gt; 
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the same configuration (100 batches, 100 epochs) described in my first attempt, the convnet achieved around 17% of validation error, 8% of improvement compared to my previous net.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/loss_adadelta2.png&quot; height=&quot;242&quot; width=&quot;342&quot; /&gt;
+&lt;img src=&quot;/img/accuracy_adadelta2.png&quot; height=&quot;242&quot; width=&quot;342&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Epoch 100/100&lt;br /&gt;
+20000/20000 [==============================] - 46s - &lt;br /&gt;
+loss: 0.2883 - acc: 0.8752 - val_loss: 0.4437 - val_acc: 0.8267&lt;/p&gt;
+
+&lt;!-- https://adbrebs.wordpress.com/page/3/ --&gt;
+</description>
+        <pubDate>Fri, 15 Apr 2016 03:22:56 -0400</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/04/15/resultsII.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/04/15/resultsII.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Dogs vs cats - First results (75% accuracy)</title>
+        <description>&lt;style&gt;
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    height:5px;
+}
+
+&lt;/style&gt;
+
+&lt;p&gt;Finally, I managed to get some results using Keras. My convnet is very simple. To get started, I only made some adjusts on the example provided at &lt;a href=&quot;http://keras.io/getting-started/sequential-model-guide/&quot; target=&quot;_blank&quot;&gt;keras.io&lt;/a&gt;. In fact, I spent a considerable amount of time trying out different configurations in order to get my convnet to learn. The main change that got things going was the shift from Rectified Linear Units (ReLUs) to tanh units as activation function. I was expecting to equaly decrease training error rate, but faster &lt;a href=&quot;http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf&quot; target=&quot;_blank&quot;&gt;(Krizhevsky et al)&lt;/a&gt; with Rectified Linear Units (ReLUS). However, my convnet was simply underfiting with ReLUs, even after trying different optimizers and learning rates. I still need to try batch normalization though. A second major thing (after using tanh) that helped me to put things on track was trying out different optimizers. At the end, I decided to stick with Adadelta, which is meant to dinamically adapt the learning rate over time. 
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The architecture of my deep convolutional network is summarized below. We used 4 convolutional layers and one fully connected (FC) layer. Each convolutional layer filters the input image (130x130x3) with 32 kernels. The FC has 512 artificial neurons.&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;INPUT&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[130x130x3]&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;CONV&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[3x3x3] (32 filters)&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;TANH&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;CONV&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[3x3x3] (32 filters)&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;TANH&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;POOL&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[2X2]&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;CONV&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[3x3x3] (32 filters)&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;TANH&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;CONV&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[3x3x3] (32 filters)&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;TANH&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;POOL&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[2X2]&lt;/td&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;FC&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+        &lt;td align=&quot;left&quot;&gt;[512]&lt;/td&gt; 
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this first attempt, I used a batch with 100 examples and my convnet achieved roughly 25% of validation error after 100 epochs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/loss_adadelta.png&quot; height=&quot;242&quot; width=&quot;342&quot; /&gt;
+&lt;img src=&quot;/img/accuracy_adadelta.png&quot; height=&quot;242&quot; width=&quot;342&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Epoch 100/100&lt;br /&gt;
+20000/20000 [==============================] - 46s - &lt;br /&gt;
+loss: 0.3849 - acc: 0.8349 - val_loss: 0.5773 - val_acc: 0.7456&lt;/p&gt;
+
+&lt;!-- https://adbrebs.wordpress.com/page/3/ --&gt;
+</description>
+        <pubDate>Thu, 14 Apr 2016 02:22:56 -0400</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/04/14/resultsI.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/04/14/resultsI.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Dogs vs cats - Lasagne</title>
+        <description>&lt;p&gt;Finally, I was able to get some code running. I’ve been using Lasagne tutorial and the receipes available in its repository. Lasagne is a very handy library to build and train neural network with Theano. At this point, I am trying different configurations for my CNN in order to improve my results, which by now is bellow the expected baseline.&lt;/p&gt;
+
+&lt;!-- https://adbrebs.wordpress.com/page/3/ --&gt;
+</description>
+        <pubDate>Mon, 28 Mar 2016 23:22:56 -0400</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/03/28/cnnlasagne.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/28/cnnlasagne.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Dogs vs cats - lenet</title>
+        <description>&lt;p&gt;Unfortunately, not much progress achieved. This week, I’ve been trying to manage to use the convolutional neural network code available at &lt;a href=&quot;http://deeplearning.net/tutorial/lenet.html&quot;&gt;deeplearning.net&lt;/a&gt;. I thought this would be a good starting point since the code works well with mnist dataset. For some reason, training is only possible when the feature dimension used is 784, same used for mnist. This gives dogsvscats 50% accuracy (not even close to the baseline). Attempting to use any other dimensionality will provide a shape mismatch error (ValueError: Shape mismatch: x has 16200 cols (and 500 rows) but y has 800 rows (and 500 cols)), even after adjusting the filters and maxpool parameters accordingly. The same error occurs independently of the the dataset (Mnist or DogsvsCats seem to raise the same issue). I expected that the code would work with any dataset regardless of the dimension of the features, but seemngly it is not the case. In the next few days, I will take some time trying to overcome this problem, but will focus more on learning how to work with Blocks.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 20 Mar 2016 23:22:56 -0400</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/03/20/cnnmnist.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/20/cnnmnist.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Dogs vs cats - Pre-processing</title>
+        <description>&lt;p&gt;In the past few days, I’ve been working on the pre-processing of the images. Specifically, I resized each picture so that they would have the same size. I used part of the tutorial suggested &lt;a href=&quot;https://trofimovassya6266h16.wordpress.com&quot;&gt;here&lt;/a&gt;. Right now, I am working on fixing a MemoryError that I’m getting during the process of loading the data as shared variable.&lt;/p&gt;
+
+&lt;p&gt;Following is an example of how to resize an image. More information and example for image processing which can be useful for data augmentation can be found &lt;a href=&quot;http://www.scipy-lectures.org/advanced/image_processing/index.html#basic-image&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;width = 130&lt;br /&gt;
+height = 130&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Resizing:&lt;br /&gt;
+file_in = “images/train/cat.0.jpg”&lt;br /&gt;
+im1 = Image.open(file_in)&lt;br /&gt;
+im2 = im1.resize((width, height), Image.NEAREST)&lt;br /&gt;
+im2.save(“resized_images/train/cat.0.jpg”)&lt;br /&gt;
+&lt;img src=&quot;/img/cat.0.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/cat.1.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/cat.10.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/dog.0.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/dog.1.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;
+&lt;img src=&quot;/img/dog.10.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 13 Mar 2016 23:22:56 -0400</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/03/13/preprocessing.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/13/preprocessing.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Dogs vs cats - First attempt</title>
+        <description>&lt;p&gt;I’m working on dogs vs cats project. I’m using a convolutional net as expected and at this point I am dealing with the following runtime error:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;shared_x = theano.shared(numpy.asarray(data_x, dtype=theano.config.floatX), borrow=True)&lt;/p&gt;
+
+&lt;p&gt;ValueError: setting an array element with a sequence.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I’ve converted the database into a HDF5 dataset and it seems that the issue has to do with the images size. Right now, I’m working on doing some preprocessing before the actual training.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Mar 2016 22:22:56 -0500</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/03/09/dogsvscats1.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/09/dogsvscats1.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>First Assignment</title>
+        <description>&lt;p&gt;Please, check the code for the first assignment &lt;a href=&quot;https://github.com/aravila/ift6266h16/blob/master/assignment1/assign1.ipynb&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 21 Feb 2016 22:22:56 -0500</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/02/21/assignment1.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/02/21/assignment1.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: R Programing
+title: R
 permalink: /r/
 ---
 
-Trying R in [aravila](https://github.com/aravila)
+Under construction!
 
 

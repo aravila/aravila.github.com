@@ -1,5 +1,5 @@
 ---
-layout: page
+%layout: page
 title: Statistics
 permalink: /stats/
 ---

@@ -2,13 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Anderson Avila</title>
-    <description>In this blog you will find useful explanation on several topics related to deep learning, statistics and digital signal processing.
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 22 Sep 2020 12:48:44 -0400</pubDate>
+    <lastBuildDate>Tue, 22 Sep 2020 12:48:44 -0400</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Dogs vs cats - Kaggle submission</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/loss_adadelta_aug.png&quot; height=&quot;242&quot; width=&quot;342&quot; /&gt;
+&lt;img src=&quot;/img/accuracy_adadelta_aug.png&quot; height=&quot;242&quot; width=&quot;342&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Epoch 33/100&lt;br /&gt;
+80000/80000 [==============================] - 266s - &lt;br /&gt;
+loss: 0.4894 - acc: 0.7729 - val_loss: 1.4173 - val_acc: 0.4786&lt;/p&gt;
+
+&lt;!-- https://adbrebs.wordpress.com/page/3/ --&gt;
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Feb 2017 08:48:13 -0500</pubDate>
-    <lastBuildDate>Mon, 27 Feb 2017 08:48:13 -0500</lastBuildDate>
-    <generator>Jekyll v3.1.1</generator>
+        <pubDate>Wed, 18 Apr 2018 14:22:56 -0400</pubDate>
+        <link>http://localhost:4000/jekyll/update/2018/04/18/kaggle.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/04/18/kaggle.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Dogs vs cats - Batch normalization (77%)</title>
@@ -24,8 +45,8 @@ loss: 0.2558 - acc: 0.7714 - val_loss: 0.6044 - val_acc: 0.8941&lt;/p&gt;
 &lt;!-- https://adbrebs.wordpress.com/page/3/ --&gt;
 </description>
         <pubDate>Mon, 18 Apr 2016 04:22:56 -0400</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/04/18/batchnormalization.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/04/18/batchnormalization.html</guid>
+        <link>http://localhost:4000/jekyll/update/2016/04/18/batchnormalization.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/04/18/batchnormalization.html</guid>
         
         
         <category>jekyll</category>
@@ -48,8 +69,8 @@ loss: 0.4894 - acc: 0.7729 - val_loss: 1.4173 - val_acc: 0.4786&lt;/p&gt;
 &lt;!-- https://adbrebs.wordpress.com/page/3/ --&gt;
 </description>
         <pubDate>Sun, 17 Apr 2016 04:22:56 -0400</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/04/17/resultsIII.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/04/17/resultsIII.html</guid>
+        <link>http://localhost:4000/jekyll/update/2016/04/17/resultsIII.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/04/17/resultsIII.html</guid>
         
         
         <category>jekyll</category>
@@ -119,8 +140,8 @@ im2.save(“resized_images/train/cat.0.jpg”)&lt;br /&gt;
 
 </description>
         <pubDate>Sat, 16 Apr 2016 04:02:56 -0400</pubDate>
-        <link>http://yourdomain.com/2016/04/16/dataargumentation.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/04/16/dataargumentation.html</guid>
+        <link>http://localhost:4000/2016/04/16/dataargumentation.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/16/dataargumentation.html</guid>
         
         
       </item>
@@ -227,8 +248,8 @@ loss: 0.2883 - acc: 0.8752 - val_loss: 0.4437 - val_acc: 0.8267&lt;/p&gt;
 &lt;!-- https://adbrebs.wordpress.com/page/3/ --&gt;
 </description>
         <pubDate>Fri, 15 Apr 2016 03:22:56 -0400</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/04/15/resultsII.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/04/15/resultsII.html</guid>
+        <link>http://localhost:4000/jekyll/update/2016/04/15/resultsII.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/04/15/resultsII.html</guid>
         
         
         <category>jekyll</category>
@@ -318,8 +339,8 @@ loss: 0.3849 - acc: 0.8349 - val_loss: 0.5773 - val_acc: 0.7456&lt;/p&gt;
 &lt;!-- https://adbrebs.wordpress.com/page/3/ --&gt;
 </description>
         <pubDate>Thu, 14 Apr 2016 02:22:56 -0400</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/04/14/resultsI.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/04/14/resultsI.html</guid>
+        <link>http://localhost:4000/jekyll/update/2016/04/14/resultsI.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/04/14/resultsI.html</guid>
         
         
         <category>jekyll</category>
@@ -335,8 +356,8 @@ loss: 0.3849 - acc: 0.8349 - val_loss: 0.5773 - val_acc: 0.7456&lt;/p&gt;
 &lt;!-- https://adbrebs.wordpress.com/page/3/ --&gt;
 </description>
         <pubDate>Mon, 28 Mar 2016 23:22:56 -0400</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/03/28/cnnlasagne.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/28/cnnlasagne.html</guid>
+        <link>http://localhost:4000/jekyll/update/2016/03/28/cnnlasagne.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/03/28/cnnlasagne.html</guid>
         
         
         <category>jekyll</category>
@@ -351,8 +372,8 @@ loss: 0.3849 - acc: 0.8349 - val_loss: 0.5773 - val_acc: 0.7456&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 20 Mar 2016 23:22:56 -0400</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/03/20/cnnmnist.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/20/cnnmnist.html</guid>
+        <link>http://localhost:4000/jekyll/update/2016/03/20/cnnmnist.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/03/20/cnnmnist.html</guid>
         
         
         <category>jekyll</category>
@@ -385,8 +406,8 @@ im2.save(“resized_images/train/cat.0.jpg”)&lt;br /&gt;
 &lt;img src=&quot;/img/dog.10.jpg&quot; height=&quot;130&quot; width=&quot;130&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 13 Mar 2016 23:22:56 -0400</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/03/13/preprocessing.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/13/preprocessing.html</guid>
+        <link>http://localhost:4000/jekyll/update/2016/03/13/preprocessing.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/03/13/preprocessing.html</guid>
         
         
         <category>jekyll</category>
@@ -410,23 +431,8 @@ im2.save(“resized_images/train/cat.0.jpg”)&lt;br /&gt;
 &lt;p&gt;I’ve converted the database into a HDF5 dataset and it seems that the issue has to do with the images size. Right now, I’m working on doing some preprocessing before the actual training.&lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Mar 2016 22:22:56 -0500</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/03/09/dogsvscats1.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/09/dogsvscats1.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>First Assignment</title>
-        <description>&lt;p&gt;Please, check the code for the first assignment &lt;a href=&quot;https://github.com/aravila/ift6266h16/blob/master/assignment1/assign1.ipynb&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
-</description>
-        <pubDate>Sun, 21 Feb 2016 22:22:56 -0500</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/02/21/assignment1.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/02/21/assignment1.html</guid>
+        <link>http://localhost:4000/jekyll/update/2016/03/09/dogsvscats1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/03/09/dogsvscats1.html</guid>
         
         
         <category>jekyll</category>

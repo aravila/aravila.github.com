@@ -10,7 +10,6 @@ permalink: /deep/auto
   <br><br>
 <p>
 
-<br><br>
 Autoencoders are neural network algorithms that provide as output the presented input after a process of compression. For autoencoders the hidden layer <i><b>h</b></i> is a compressed representation of the input <i><b>x</b></i>, which is obtained by an encode function  <i><b>h</b></i> = <i>f(<b>x</b>)</i>. This representation must be decompressed by a decode function, <i><b>x'</b></i> = <i>g(<b>h</b>)</i>, in order to obtain a reconstruction of the input. 
 
 <br><br>

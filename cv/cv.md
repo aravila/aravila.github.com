@@ -44,10 +44,12 @@ Thesis Title: Project Proposal for the Development of a Speech-to-Speech System 
 <br>
 Thesis Title: Software for monitoring laboratory and equipment reservations
 </p>
+
 ___
 <br>
-<b><u>PROFESSIONAL RESEARCH EXPERIENCE</u></b>
-<p>
+<b><u>PROFESSIONAL RESEARCH EXPERIENCE</u></b><br>
+<b>October 2020 – Present</b>: Machine Learning Researcher, Huawei, Canada.
+<br>
 <b>July 2018 – October 2018</b>: Research Intern, Microsoft, USA.
 <br>
 <b>January 2018 – July 2018</b>: Research Intern, CRIM, Canada.
@@ -56,6 +58,7 @@ ___
 <br>
 <b>January 2011 – October 2013</b>: Research Associate, Federal University of ABC, Brazil.
 </p>
+
 ___
 <br>
 <b><u>PUBLICATIONS (Journals)</u></b>
@@ -72,11 +75,21 @@ ___
 <br><br>
 [J1] A. Avila, Z. Akhtar, J. Santos, D. O’Shaughnessy, T. Falk, Feature Pooling for Spontaneous Speech-Based Emotion Recognition in-the-wild, IEEE Transaction on Affective Computing, 2018, pp. 1-12, DOI: 10.1109/TAFFC.2018.2858255..
 </p>
-
 ___
+
 <br>
 <b><u>PUBLICATIONS (Conferences)</u></b>
 <p align="justify">
+[C20] A.Avila, Y.Cao, C.XING. Multimodal Audio-textual Architecture for Robust Spoken Language Understanding, ACL 2022 (submitted).
+<br><br>
+[C19] C.XING, etal. Speech-MLP: A Simple MLP Architecture for Speech Processing, ICLR 2022 (submitted).
+<br><br>
+[C18] A.Avila, etal. Low-bit Shift Network for End-to-End Spoken Language Understanding, ICASSP 2022 (submitted).
+<br><br>
+[C17] N.Potdar, A.Avila,C.XING,etal. A Streaming End-to-End Framework For Spoken Language Understanding, IJCAI 2021.
+<br><br>
+[C16] Y.Cao,  N.Potdar, and A.Avila. Sequential End-to-End Intent and Slot Label Classification and Localization, Interspeech 2021.
+<br><br>
 [C15] A. Avila, H. Gamper, C. Reddy, R. Cutler, I. Tashev, J. Gehrke, Non-intrusive speech quality assessment using neural networks, ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 631-635, DOI: 10.1109/ICASSP.2019.8683175..
 <br><br>
 [C14] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, Blind Channel Response Estimation for Replay Attack Detection, Interspeech 2019, pp. 2893-2897, DOI: 10.21437/Interspeech.2019-2956..
@@ -121,4 +134,3 @@ ___
 <br>
 <b>Development Industrial Technological Scholarship</b>, Brazil, 2011
 </p>
-

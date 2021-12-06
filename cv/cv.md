@@ -63,11 +63,11 @@ ___
 <br>
 <b><u>PUBLICATIONS (Journals)</u></b>
 <p align="justify">
-[J6] A. Avila, D. O’Shaughnessy, T. Falk, Automatic Speaker Verification from Affective Speech Using Gaussian Mixture Model Based Estimation of Neutral Speech Characteristics, J. Speech Communication, under review, 2021.
+[J6] A. Avila, D. O’Shaughnessy, T. Falk, Automatic Speaker Verification from Affective Speech Using Gaussian Mixture Model Based Estimation of Neutral Speech Characteristics, J. Speech Communication, vol. 132, p. 21-31, 2021.
 <br><br>
-[J5] A. Avila, J. Alam, F. Prado, D. O’Shaughnessy, T. Falk, On the Use of Blind Channel Response Estimation and a Residual Neural Network to Detect Physical Access Attacks to Speaker Verification Systems, J. Computer Speech & Language, under review, 2021.
+[J5] A. Avila, J. Alam, F. Prado, D. O’Shaughnessy, T. Falk, On the Use of Blind Channel Response Estimation and a Residual Neural Network to Detect Physical Access Attacks to Speaker Verification Systems, J. Computer Speech & Language, vol. 66, 2021.
 <br><br>
-[J4] A. Avila, D. O’Shaughnessy, T. Falk, Non-intrusive Speech Quality Prediction Based on the Blind Estimation of Clean Speech and the i-vector Framework, J. Quality and User Experience, in press, 2020.
+[J4] A. Avila, D. O’Shaughnessy, T. Falk, Non-intrusive Speech Quality Prediction Based on the Blind Estimation of Clean Speech and the i-vector Framework, J. Quality and User Experience, vol.5, no 1, p. 1-15, 2020.
 <br><br>
 [J3] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, On the Use of the I-vector Speech Representation for Instrumental Quality Measurement, J. Quality and User Experience, 2020, vol. 5, no 1, pp. 1-14, DOI: https://doi.org/10.1007/s41233-020-00036-z.
 <br><br>

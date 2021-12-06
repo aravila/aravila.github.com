@@ -80,27 +80,25 @@ ___
 <br>
 <b><u>PUBLICATIONS (Conferences)</u></b>
 <p align="justify">
-[C20] A.Avila, Y.Cao, C.XING. Multimodal Audio-textual Architecture for Robust Spoken Language Understanding, ACL 2022 (submitted).
+[C19] A.Avila, Y.Cao, C.XING. Multimodal Audio-textual Architecture for Robust Spoken Language Understanding, ACL 2022 (submitted).
 <br><br>
-[C19] C.XING, etal. Speech-MLP: A Simple MLP Architecture for Speech Processing, ICLR 2022 (submitted).
+[C18] C.XING, etal. Speech-MLP: A Simple MLP Architecture for Speech Processing, ICLR 2022 (submitted).
 <br><br>
-[C18] A.Avila, etal. Low-bit Shift Network for End-to-End Spoken Language Understanding, ICASSP 2022 (submitted).
+[C17] A.Avila, etal. Low-bit Shift Network for End-to-End Spoken Language Understanding, ICASSP 2022 (submitted).
 <br><br>
-[C17] N.Potdar, A.Avila,C.XING,etal. A Streaming End-to-End Framework For Spoken Language Understanding, IJCAI 2021.
+[C16] N.Potdar, A.Avila,C.XING,etal. A Streaming End-to-End Framework For Spoken Language Understanding, IJCAI 2021.
 <br><br>
-[C16] Y.Cao,  N.Potdar, and A.Avila. Sequential End-to-End Intent and Slot Label Classification and Localization, Interspeech 2021.
+[C15] Y.Cao,  N.Potdar, and A.Avila. Sequential End-to-End Intent and Slot Label Classification and Localization, Interspeech 2021.
 <br><br>
-[C15] A. Avila, H. Gamper, C. Reddy, R. Cutler, I. Tashev, J. Gehrke, Non-intrusive speech quality assessment using neural networks, ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 631-635, DOI: 10.1109/ICASSP.2019.8683175..
+[C14] A. Avila, H. Gamper, C. Reddy, R. Cutler, I. Tashev, J. Gehrke, Non-intrusive speech quality assessment using neural networks, ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 631-635, DOI: 10.1109/ICASSP.2019.8683175..
 <br><br>
-[C14] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, Blind Channel Response Estimation for Replay Attack Detection, Interspeech 2019, pp. 2893-2897, DOI: 10.21437/Interspeech.2019-2956..
+[C13] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, Blind Channel Response Estimation for Replay Attack Detection, Interspeech 2019, pp. 2893-2897, DOI: 10.21437/Interspeech.2019-2956..
 <br><br>
-[C13] A. Avila, S. Kshirsagar, A. Tiwari, D. Lafond, D. O’Shaughnessy, and T. Falk, Speech-Based Stress and Emotion Classification Based on Modulation Spectral Features and Convolutional Neural Networks, 27th European Signal Processing Conference (EUSIPCO) 2019, pp. 1-5, DOI: 10.23919/EUSIPCO.2019.8903014.
+[C12] A. Avila, S. Kshirsagar, A. Tiwari, D. Lafond, D. O’Shaughnessy, and T. Falk, Speech-Based Stress and Emotion Classification Based on Modulation Spectral Features and Convolutional Neural Networks, 27th European Signal Processing Conference (EUSIPCO) 2019, pp. 1-5, DOI: 10.23919/EUSIPCO.2019.8903014.
 <br><br>
-[C12] B. Sadou, A. Lahoulou, T. Bouden, A. Avila, T. Falk, Z. Akhtar, Blind Image Quality Assessment using SVD based Dominant Eigenvectors for Feature Selection, SIPRO 2019.
+[C11] B. Sadou, A. Lahoulou, T. Bouden, A. Avila, T. Falk, Z. Akhtar, Blind Image Quality Assessment using SVD based Dominant Eigenvectors for Feature Selection, SIPRO 2019.
 <br><br>
-[C11] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, Intrusive Quality Measurement of Noisy and Enhanced Speech based on i-Vector Similarity, QoMEX 2019, pp. 1-5, DOI: 10.1109/QoMEX.2019.8743285. <b>*Nominated for Best Paper Award*</b>
-<br><br>
-[C10] B. Sadou, A. Lahoulou, T. Bouden, A. Avila, T. Falk, Z. Akhtar, \emph{Blind Image Quality Assessment using SVD based Dominant Eigenvectors for Feature Selection}, SIPRO 2019, pp. 233-242, DOI: 10.5121/csit.2019.90919.
+[C10] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, Intrusive Quality Measurement of Noisy and Enhanced Speech based on i-Vector Similarity, QoMEX 2019, pp. 1-5, DOI: 10.1109/QoMEX.2019.8743285. <b>*Nominated for Best Paper Award*</b>
 <br><br>
 [C9] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, Investigating Speech Enhancement and Perceptual Quality for Speech Emotion Recognition, Interspeech 2018, pp. 3663-3667, DOI: 10.21437/Interspeech.2018-2350..
 <br><br>

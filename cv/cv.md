@@ -63,17 +63,17 @@ ___
 <br>
 <b><u>PUBLICATIONS (Journals)</u></b>
 <p align="justify">
-[J6] A. Avila, D. O’Shaughnessy, T. Falk, Non-intrusive Speech Quality Prediction Based on the Blind Estimation of Clean Speech and the i-vector Framework, J. Quality and User Experience, in press, 2020.
+[J6] A. Avila, D. O’Shaughnessy, T. Falk, Automatic Speaker Verification from Affective Speech Using Gaussian Mixture Model Based Estimation of Neutral Speech Characteristics, J. Speech Communication, under review, 2021.
 <br><br>
-[J5] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, On the Use of the I-vector Speech Representation for Instrumental Quality Measurement, J. Quality and User Experience, 2020, vol. 5, no 1, pp. 1-14, DOI: https://doi.org/10.1007/s41233-020-00036-z.
+[J5] A. Avila, J. Alam, F. Prado, D. O’Shaughnessy, T. Falk, On the Use of Blind Channel Response Estimation and a Residual Neural Network to Detect Physical Access Attacks to Speaker Verification Systems, J. Computer Speech & Language, under review, 2021.
 <br><br>
-[J4] A. Avila, J. Alam, F. Prado, D. O’Shaughnessy, T. Falk, On the Use of Blind Channel Response Estimation and a Residual Neural Network to Detect Physical Access Attacks to Speaker Verification Systems, J. Computer Speech & Language, under review, 2020.
+[J4] A. Avila, D. O’Shaughnessy, T. Falk, Non-intrusive Speech Quality Prediction Based on the Blind Estimation of Clean Speech and the i-vector Framework, J. Quality and User Experience, in press, 2020.
 <br><br>
-[J3] A. Avila, D. O’Shaughnessy, T. Falk, Automatic Speaker Verification from Affective Speech Using Gaussian Mixture Model Based Estimation of Neutral Speech Characteristics, J. Speech Communication, under review, 2020.
+[J3] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, On the Use of the I-vector Speech Representation for Instrumental Quality Measurement, J. Quality and User Experience, 2020, vol. 5, no 1, pp. 1-14, DOI: https://doi.org/10.1007/s41233-020-00036-z.
 <br><br>
 [J2] B. Sadou, A. Lahoulou, T. Bouden, A. Avila, T. Falk, Z. Akhtar, Free-Reference Image Quality Assessment Framework using Metrics Fusion and Dimensionality Reduction, Signal & Image Processing, 2019, Vol. 10, No. 5, pp. 1-14, DOI: 10.5121/sipij.2019.10501.
 <br><br>
-[J1] A. Avila, Z. Akhtar, J. Santos, D. O’Shaughnessy, T. Falk, Feature Pooling for Spontaneous Speech-Based Emotion Recognition in-the-wild, IEEE Transaction on Affective Computing, 2018, pp. 1-12, DOI: 10.1109/TAFFC.2018.2858255..
+[J1] A. Avila, Z. Akhtar, J. Santos, D. O’Shaughnessy, T. Falk, Feature Pooling for Spontaneous Speech-Based Emotion Recognition in-the-wild, IEEE Transaction on Affective Computing, 2018, pp. 1-12, DOI: 10.1109/TAFFC.2018.2858255.
 </p>
 ___
 

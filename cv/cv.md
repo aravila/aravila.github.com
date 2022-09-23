@@ -11,9 +11,9 @@ ___
 <p align="justify">
 <img src="{{ site.baseurl }}/img/cv/phone.png" height="20" width="20">&nbsp;&nbsp; +1 (514) 562-3459
 <br>
-<img src="{{ site.baseurl }}/img/cv/address.png" height="20" width="20">&nbsp;&nbsp; 6841 Place D’Antioche, 28
+<img src="{{ site.baseurl }}/img/cv/address.png" height="20" width="20">&nbsp;&nbsp; 108 rue de la Perriere Sud
 <br>
-<img src="{{ site.baseurl }}/img/cv/location.jpg" height="20" width="20">&nbsp;&nbsp; Montreal, Canada
+<img src="{{ site.baseurl }}/img/cv/location.jpg" height="20" width="20">&nbsp;&nbsp; Boucherville, Canada
 <br>
 <img src="{{ site.baseurl }}/img/cv/email.png" height="20" width="20">&nbsp;&nbsp; anderson.avila@gmail.com
 <br>
@@ -31,14 +31,14 @@ Thesis Title: Signal Processing and Machine Learning for Robust in-the-wild Voic
 <b>Master of Science</b> - Information Engineering, Federal University of ABC, Brazil, 2014
 <br>
 Thesis Title: A Comparative Analysis of Gaussian Mixture Models and I-vector for Speaker Verification under Mismatched Conditions
-<!-- <br><br>
+<br><br>
 <b>Postgraduate certificate</b> - Information Systems, Federal University of ABC, Brazil, 2011
 <br>
 Thesis Title: Speech-to-Speech Translation System from Portuguese to English
 <br><br>
 <b>Postgraduate certificate</b> - Industrial Process Management, Unicamp, November 2011
 <br>
-Thesis Title: Project Proposal for the Development of a Speech-to-Speech System from Portuguese to Portuguese to English -->
+Thesis Title: Project Proposal for the Development of a Speech-to-Speech System from Portuguese to Portuguese to English
 <br><br>
 <b>Bachelor of Science</b> – Computer Science, Federal University of Sao Carlos, August 2004
 <br>
@@ -48,7 +48,9 @@ Thesis Title: Software for monitoring laboratory and equipment reservations
 ___
 <br>
 <b><u>PROFESSIONAL RESEARCH EXPERIENCE</u></b><br>
-<b>October 2020 – Present</b>: Machine Learning Researcher, Huawei, Canada.
+<b>October 2022 – Present</b>: Associate Professor, INRS-EMT, Canada.
+<br>
+<b>October 2020 – October 2022</b>: Machine Learning Researcher, Huawei, Canada.
 <br>
 <b>July 2018 – October 2018</b>: Research Intern, Microsoft, USA.
 <br>

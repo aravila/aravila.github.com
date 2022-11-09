@@ -10,14 +10,14 @@ title: Anderson Avila, PhD
 email: anderson.avila[et]inrs.ca
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://aravila.github.io/" # the base hostname & protocol for your site
+url: "http://yourdomain.com" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  aravila
 phone: +1 514 228 6841
 address: 1650 Boul. Lionel-Boulet - Varennes (Quebec)  - J3X 1S2 - Canada
 linkedin: andersonavila
-photo_header: photo_bkg_gray.png
-photo: photo_selfie5.jpg
+photo_header: photo_bkg_gray.jpg
+photo: photo_selfie5.1.jpg
 google: googlescholar
 
 r_programing: r

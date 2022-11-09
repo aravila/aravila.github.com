@@ -5,22 +5,25 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    background-image: url("../images/cyber_banner2.jpeg");
+    color: #E5E4E2;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    color: #E5E4E2;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: #E5E4E2;
     }
 }
 
@@ -33,7 +36,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: #E5E4E2;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -132,13 +135,13 @@
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+    width:         calc(30% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
@@ -167,6 +170,35 @@
 /**
  * Page content
  */
+
+.curve1 { 
+    width: 10%;
+    max-width: 70%;
+    height: 10%;
+    float: left;
+    margin-right:0rem;
+    shape-outside:circle(35%);
+    -webkit-clip-path: circle(40%);
+}
+
+.curve2 {
+    width: 32%;
+    clip-path: circle();
+    float: right;
+    shape-outside: circle(45%);
+    transform: translate(15%);    
+}
+
+.curve { 
+    width: 36%;
+    max-width: 100%;
+    height: auto;
+    float: right;
+    margin-right:0rem;
+    shape-outside:circle(50%);
+    -webkit-clip-path: circle(42%);
+}
+
 .page-content {
     padding: $spacing-unit 0;
 }

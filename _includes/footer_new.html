@@ -5,23 +5,38 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {% if site.email %}
+          <li>
+            {% include icon-email.html username=site.email %}
+          </li>
+          {% endif %}
+          {% if site.phone %}
+          <li>
+            {% include icon-phone.html username=site.phone %}
+          </li>
+          {% endif %}
+          {% if site.google %}
+          <li>
+            {% include icon-google.html username=site.google %}
+          </li>
+          {% endif %}
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
+          {% if site.linkedin %}
+          <li>
+            {% include icon-linkedin.html username=site.linkedin %}
+          </li>
+          {% endif %}
+
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
           </li>
           {% endif %}
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
         </ul>
       </div>
 

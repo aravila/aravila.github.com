@@ -7,11 +7,11 @@ permalink: /publications/publications
 <br>
 <b><u>PUBLICATIONS (Journals)</u></b>
 <p align="justify">
-[J6] A. Avila, D. O’Shaughnessy, T. Falk, Automatic Speaker Verification from Affective Speech Using Gaussian Mixture Model Based Estimation of Neutral Speech Characteristics, J. Speech Communication, under review, 2021.
+[J6] A. Avila, D. O’Shaughnessy, T. Falk, Automatic Speaker Verification from Affective Speech Using Gaussian Mixture Model Based Estimation of Neutral Speech Characteristics, J. Speech Communicationn, vol. 132, p. 21-31, 2021.
 <br><br>
-[J5] A. Avila, J. Alam, F. Prado, D. O’Shaughnessy, T. Falk, On the Use of Blind Channel Response Estimation and a Residual Neural Network to Detect Physical Access Attacks to Speaker Verification Systems, J. Computer Speech & Language, under review, 2021.
+[J5] A. Avila, J. Alam, F. Prado, D. O’Shaughnessy, T. Falk, On the Use of Blind Channel Response Estimation and a Residual Neural Network to Detect Physical Access Attacks to Speaker Verification Systems, J. Computer Speech & Language, vol. 66, 2021.
 <br><br>
-[J4] A. Avila, D. O’Shaughnessy, T. Falk, Non-intrusive Speech Quality Prediction Based on the Blind Estimation of Clean Speech and the i-vector Framework, J. Quality and User Experience, in press, 2020.
+[J4] A. Avila, D. O’Shaughnessy, T. Falk, Non-intrusive Speech Quality Prediction Based on the Blind Estimation of Clean Speech and the i-vector Framework, J. Quality and User Experience, vol. 5, no 1, p. 1-15, 2020.
 <br><br>
 [J3] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, On the Use of the I-vector Speech Representation for Instrumental Quality Measurement, J. Quality and User Experience, 2020, vol. 5, no 1, pp. 1-14, DOI: https://doi.org/10.1007/s41233-020-00036-z.
 <br><br>
@@ -24,19 +24,15 @@ ___
 <br>
 <b><u>PUBLICATIONS (Conferences)</u></b>
 <p align="justify">
-[C19] A.Avila, Y.Cao, C.XING. Multimodal Audio-textual Architecture for Robust Spoken Language Understanding, ACL 2022 (submitted).
+[C17] A.Avila, etal. Low-bit Shift Network for End-to-End Spoken Language Understanding, Interspeech 2022, DOI: 10.21437/Interspeech.2022-760.
 <br><br>
-[C18] C.XING, etal. Speech-MLP: A Simple MLP Architecture for Speech Processing, ICLR 2022 (submitted).
-<br><br>
-[C17] A.Avila, etal. Low-bit Shift Network for End-to-End Spoken Language Understanding, ICASSP 2022 (submitted).
-<br><br>
-[C16] N.Potdar, A.Avila,C.XING,etal. A Streaming End-to-End Framework For Spoken Language Understanding, IJCAI 2021.
+[C16] N.Potdar, A.Avila,C.XING,etal. A Streaming End-to-End Framework For Spoken Language Understanding, IJCAI 2021, pp. 3906-3914, DOI: 10.24963/ijcai.2021/538.
 <br><br>
 [C15] Y.Cao,  N.Potdar, and A.Avila. Sequential End-to-End Intent and Slot Label Classification and Localization, Interspeech 2021.
 <br><br>
-[C14] A. Avila, H. Gamper, C. Reddy, R. Cutler, I. Tashev, J. Gehrke, Non-intrusive speech quality assessment using neural networks, ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 631-635, DOI: 10.1109/ICASSP.2019.8683175..
+[C14] A. Avila, H. Gamper, C. Reddy, R. Cutler, I. Tashev, J. Gehrke, Non-intrusive speech quality assessment using neural networks, ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 631-635, DOI: 10.1109/ICASSP.2019.8683175.
 <br><br>
-[C13] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, Blind Channel Response Estimation for Replay Attack Detection, Interspeech 2019, pp. 2893-2897, DOI: 10.21437/Interspeech.2019-2956..
+[C13] A. Avila, J. Alam, D. O’Shaughnessy, T. Falk, Blind Channel Response Estimation for Replay Attack Detection, Interspeech 2019, pp. 2893-2897, DOI: 10.21437/Interspeech.2019-2956.
 <br><br>
 [C12] A. Avila, S. Kshirsagar, A. Tiwari, D. Lafond, D. O’Shaughnessy, and T. Falk, Speech-Based Stress and Emotion Classification Based on Modulation Spectral Features and Convolutional Neural Networks, 27th European Signal Processing Conference (EUSIPCO) 2019, pp. 1-5, DOI: 10.23919/EUSIPCO.2019.8903014.
 <br><br>
